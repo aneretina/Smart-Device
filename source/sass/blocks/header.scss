@@ -1,0 +1,146 @@
+.header {
+  background: url("../img/bg-effect.webp") center no-repeat $black-bg;
+  min-height: 647px;
+  z-index: -2;
+  position: relative;
+  width: 100%;
+  min-height: 853px;
+  padding-top: 27px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__email,
+.header__phone {
+  font-family: $font-PTmono;
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+}
+
+.header__icon {
+  display: block;
+  margin-right: 14px;
+  margin-top: 2px;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	margin-top: 15px;
+}
+
+.header__link {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 37px 12px 8px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.header__link--phone {
+  margin: 0 13px 0 53px;
+}
+
+.header__callback {
+  display: block;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-roboto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  width: 180px;
+  height: 45px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: -11px -15px 2px 0;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  padding-top: 12px;
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    min-height: 686px;
+    padding-top: 16px;
+    }
+
+    .header__contacts {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 0;
+      margin-top: -3px;
+    }
+
+    .header__icon--email {
+      width: 25px;
+      height: 19px;
+    }
+    
+    .header__icon--phone {
+      width: 24px;
+      height: 24px;
+    }
+
+  .header__callback {
+    display: none;
+  }
+  
+	.header__link {
+		margin-right: -16px;
+  }
+  
+  .header__email,
+  .header__phone {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    min-height: 686px;
+    padding-top: 16px;
+  }
+  
+  .header__container {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__contacts {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1px;
+  }
+  
+  .header__link {
+    display: block;
+    padding-left: 23px;
+    margin: 0;
+  }
+  
+  .header__callback {
+    display: none;
+  }
+  
+  .header__email,
+  .header__phone {
+    display: none;
+  }
+  
+  }
+

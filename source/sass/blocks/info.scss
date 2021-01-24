@@ -1,0 +1,114 @@
+.info {
+    padding: 33px 0 82px 0;
+    position: relative;
+}
+
+.info__container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+
+.info__title {
+    font-family: $font-roboto;
+    color: $grey;
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: 400;
+    margin-left: 178px;
+}
+
+.info__text {
+    font-family: $font-PTmono;
+    color: $grey;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-top: -12px;
+    margin-left: 178px;
+}
+
+.info__text--span  {
+    margin-left: 1px;
+}
+
+.info__button {
+    display: block;
+    color: $blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font-roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    width: 180px;
+    height: 45px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 32px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding-top: 12px;
+    margin-left: 178px;
+}
+
+.info__year {
+    display: block;
+    position: absolute;
+    top: 63px;
+    left: 110px;
+}
+
+
+@media (max-width: $tablet-width) {
+    .info__year {
+        display: block;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .info {
+        padding: 10px 16px;
+    }
+    
+    .info__title {
+        font-family: $font-roboto;
+        color: $grey;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+    
+    .info__text {
+        font-family: $font-PTmono;
+        color: $grey;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        padding-bottom: 21px;
+    }
+    
+    .info__button {
+        display: block;
+        color: $blue;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font-roboto;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 700;
+        width: 180px;
+        height: 45px;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-top: -6px;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+        padding-top: 12px;
+    }
+    
+    .info__year {
+        display: none;
+    }    
+}

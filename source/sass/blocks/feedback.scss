@@ -1,0 +1,271 @@
+.feedback {
+    background-color: $blue;
+    padding: 10px 0 60px 0;
+    background: url("../img/icon-triangle-feedback.svg") left 174px top -60px no-repeat $blue;
+}
+
+.feedback__container  {
+    position: relative;
+    display: flex;
+    width: 1150px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 150px;
+        left: -24px;
+        width: 511px;
+        height: 288px;
+        background-image: url("../img/paper-airplane-desktop@1x.png");
+        background-position: center;
+    
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/paper-airplane-desktop@2x.png");
+        }
+      }
+}
+
+.feedback__wrapper {
+    margin-right: -18px;
+    max-width: 570px;
+}
+
+.feedback__title {
+    font-family: $font-roboto;
+    color: $white;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-top: 54px;
+}
+
+.feedback__text {
+    font-family: $font-PTmono;
+    margin-top: 12px;
+    color: $white;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.feedback__form input {
+    font-family: $font-PTmono;
+    width: 270px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 31px;
+    padding-left: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: $white;
+    font-size: 16px;
+    line-height: 22px;
+
+    &::placeholder {
+        font-family: $font-PTmono;
+        color: $white;
+        font-size: 16px;
+        line-height: 22px;
+      } 
+}
+
+.feedback__form textarea {
+    font-family: $font-PTmono;
+    width: 570px;
+    height: 154px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: $white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+
+    &::placeholder {
+        font-family: $font-PTmono;
+        color: $white;
+        font-size: 16px;
+        line-height: 22px;
+      }  
+}
+
+.feedback__button {
+    display: block;
+    background-color: transparent;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font-roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    width: 270px;
+    height: 45px;
+    border: 1px solid $white;
+    border-radius: 5px;
+    margin: 51px 2px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.feedback__agreement {
+    font-family: $font-PTmono;
+    position: relative;
+    display: block;
+    margin-top: 56px;
+    padding-left: 33px;
+    width: 230px;
+    opacity: 0.8;
+    color: $white;
+    font-size: 14px;
+    line-height: 16px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #ffffff;
+    }
+}
+
+@media (max-width: $tablet-width) {
+   
+}
+
+@media (max-width: $mobile-width) {
+    feedback {
+        background-color: $blue;
+        padding: 10px 0 38px 0;
+    }
+    
+    .feedback__title {
+        font-family: $font-roboto;
+        color: $white;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    
+    .feedback__text {
+        font-family: $font-PTmono;
+        margin-top: 12px;
+        color: $white;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .feedback__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+    
+    .feedback__form input {
+        font-family: $font-PTmono;
+        width: 290px;
+        height: 52px;
+        box-sizing: border-box;
+        margin-bottom: 31px;
+        padding-left: 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: $white;
+        font-size: 16px;
+        line-height: 22px;
+    
+        &::placeholder {
+            font-family: $font-PTmono;
+            color: $white;
+            font-size: 16px;
+            line-height: 22px;
+          } 
+    }
+    
+    .feedback__form textarea {
+        font-family: $font-PTmono;
+        width: 290px;
+        height: 104px;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+        padding-left: 16px;
+        padding-top: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: $white;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 0;
+    
+        &::placeholder {
+            font-family: $font-PTmono;
+            color: $white;
+            font-size: 16px;
+            line-height: 22px;
+          }  
+    }
+    
+    .feedback__button {
+        display: block;
+        background-color: transparent;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font-roboto;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 700;
+        width: 290px;
+        height: 47px;
+        border: 1px solid $white;
+        border-radius: 5px;
+        margin: 29px 2px;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+    }
+    
+    .feedback__agreement {
+        font-family: $font-PTmono;
+        position: relative;
+        display: block;
+        padding-top: 2px;
+        padding-left: 33px;
+        width: 230px;
+        opacity: 0.8;
+        color: $white;
+        font-size: 14px;
+        line-height: 16px;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ffffff;
+        }
+    }
+}
