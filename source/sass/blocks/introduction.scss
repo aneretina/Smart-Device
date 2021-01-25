@@ -1,7 +1,6 @@
 .introduction {
   z-index: 0;
   position: relative;
-  min-width: 1024px;
  }
 
  .introduction__wrapper {
@@ -101,6 +100,7 @@
   line-height: 16px;
   font-weight: normal;
   color: $white;
+  opacity: 0.5;
 
   &:hover,
   &:focus {
@@ -146,35 +146,38 @@
     font-size: 18px;
     line-height: 28px;
     max-width: 356px;
-    padding-left: 64px;
+    padding-left: 117px;
+
+    &::before {
+      content: "";
+      top: 20px;
+      left: 66px;
+      width: 33px;
+    }
   }
 
   .introduction__btn--mobile {
     display: none;
  }
+
+ .introduction__scroll {
+  display: none;
+  }
  
  .introduction__btn--desktop {
-  display: block;
-  background-color: $blue;
-  color: $white;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: $font-roboto;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 700;
   width: 379px;
   height: 55px;
-  border: 1px solid;
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding-top: 18px;
-  margin: 53px 114px;
-  letter-spacing: 1px
+  padding-top: 20px;
+  margin: 57px 114px;
   }
 }
 
 @media (max-width: $mobile-width) {
+  .introduction__container {
+    width: 290px;
+    margin: 0 auto;
+  }
+
  .introduction__wrapper {
   position: absolute;
   top: -15px;
@@ -185,13 +188,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: -21px;
-    left: 142px;
+    top: 30px;
+    left: 138px;
     width: 281px;
     height: 434px;
-    background: url("../img/icon-triangle-intro.svg") left -128px top -164px no-repeat;
-    background-size: 580px auto;
-    background-position: left -93px top -123px;
   }
 }
 
@@ -202,20 +202,26 @@
   font-weight: 700;
   color: $white;
   max-width: 277px;
-  margin: 46px 0 27px 0;
-  padding-top: 183px;
+  padding-left: 0;
+  margin: 0;
+  padding-top: 230px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
 .introduction__subtext {
-  font-family: $font-PTmono;
+  padding-left: 3px;
+  padding-top: 28px;
   font-size: 16px;
   line-height: 25px;
-  font-weight: 500;
-  color: $white;
   max-width: 245px;
   margin: 0 0 0 49px;
+
+  &::before {
+    content: "";
+    top: 43px;
+    left: -45px;
+  }
 }
 
 .introduction__btn--mobile {
@@ -242,8 +248,9 @@
   border-radius: 5px;
   box-sizing: border-box;
   padding-top: 16px;
-  margin: 39px auto;
-  letter-spacing: 1px
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-left: 3px;
 }
 
 }

@@ -51,7 +51,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: $grey;
+    color: $gray;
     margin-top: -8px;
     min-width: 482px;
   }
@@ -68,9 +68,9 @@
 
   @media (max-width: $tablet-width) {
     .advantages {
-        padding-top: 54px;
+        padding-top: 55px;
+        margin: 0;
       }
-    
 
      .advantages__list {
       margin: 0;
@@ -80,10 +80,9 @@
       justify-content: space-between;
   }
   
-    
       .advantages__item {
-        width: calc(50% - 56px);
-        margin: 0 0 20px 0;
+        width: 345px;
+        margin: 0 0 28px 0;
         min-height: 275px;
         padding: 25px 14px 8px 25px;
       }
@@ -104,7 +103,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
-        color: $grey;
+        color: $gray;
         padding: 0 5px 0 2px; 
         min-width: 246px;
       }
@@ -118,54 +117,46 @@
 
 @media (max-width: $mobile-width) {
   .advantages {
-    padding-top: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-top: 14px;
   }
 
   .advantages__list {
     list-style: none;
     padding-left: 0;
+    flex-direction: column;
   }
 
   .advantages__item {
-    display: block;
-    margin: 0 0 20px 0;
-    min-height: 232px;
-    padding-bottom: 5px;
+    min-width: 290px;
+    min-height: 310px;
+    margin: 21px 0 0;
     padding-left: 22px;
-    padding-right: 16px;
-    background: $white;
-    border: 1px solid #ebebeb;
-    border-left: 2px solid $blue;
+    padding-right: 8px;
   }
 
   .advantages__title {
-    font-family: $font-roboto;
-    font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: $blue;
     margin: 11px 0;
   }
 
   .advantages__text {
-    font-family: $font-PTmono;
-    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: $grey;
     margin-top: 10px;
   }
 
-  .advantages__text--providers {
-   min-width: 260px;
+  .advantages__item--confidence {
+   min-height: 232px;
   }
 
+  .advantages__item--price {
+  min-height: 244px;
+   }
+ 
   .advantages__icon {
     display: block;
     fill: $blue;
-    margin-top: 24px;
+    margin-top: 0;
   }
 }

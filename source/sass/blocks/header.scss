@@ -3,9 +3,9 @@
   min-height: 647px;
   z-index: -2;
   position: relative;
-  width: 100%;
   min-height: 853px;
   padding-top: 27px;
+  background-size: cover;
 }
 
 .header__container {
@@ -73,7 +73,7 @@
 
 @media (max-width: $tablet-width) {
   .header {
-    min-height: 686px;
+    min-height: 672px;
     padding-top: 16px;
     }
 
@@ -99,8 +99,14 @@
   }
   
 	.header__link {
-		margin-right: -16px;
+    padding: 0px 0px 12px 8px;
   }
+
+
+.header__link--phone {
+  margin: 0;
+}
+
   
   .header__email,
   .header__phone {
@@ -110,20 +116,20 @@
 
 @media (max-width: $mobile-width) {
   .header {
-    min-height: 686px;
-    padding-top: 16px;
+    min-height: 630px;
+    align-items: center;
   }
   
   .header__container {
-    padding-top: 16px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    max-width: 316px;
+    padding-left: 15px;
   }
   
   .header__contacts {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 1px;
   }
   

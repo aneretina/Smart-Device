@@ -78,7 +78,7 @@
         color: $white;
         font-size: 16px;
         line-height: 22px;
-      } 
+      }    
 }
 
 .feedback__form textarea {
@@ -86,7 +86,6 @@
     width: 570px;
     height: 154px;
     box-sizing: border-box;
-    margin-bottom: 40px;
     padding-left: 16px;
     padding-top: 10px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -147,13 +146,88 @@
 }
 
 @media (max-width: $tablet-width) {
-   
+    .feedback {
+        background: $blue;
+        padding: 10px 0 56px 0;
+    }
+
+    .feedback__container  {
+        position: relative;
+        display: flex;
+        width: 718px;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 auto;
+    
+        &::before {
+                display: none;
+              }
+    }
+
+
+.feedback__wrapper {
+    margin: 0 auto;
+    max-width: 590px;
+}
+
+.feedback__title {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 0;
+    padding-top: 42px;
+}
+
+.feedback__text {
+    margin-top: 17px;
+}
+
+.feedback__form input {
+    width: 279px;
+    height: 52px;
+    margin-bottom: 44px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.feedback__form textarea {
+    width: 590px;
+    height: 160px;
+}
+
+
+.feedback__button {
+    width: 280px;
+    height: 46px;
+    margin: 46px 2px;
+}
+
+.feedback__agreement {
+    margin-top: 55px;
+    padding-left: 55px;
+
+    &::before {
+        top: 0;
+        left: 17px;
+    }
+}
 }
 
 @media (max-width: $mobile-width) {
-    feedback {
+    .feedback {
         background-color: $blue;
-        padding: 10px 0 38px 0;
+        padding: 10px 0 44px 0;
+    }
+
+    .feedback__container  {
+        width: 290px;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 auto;
+    }
+
+    .feedback__wrapper {
+        max-width: 320px;
     }
     
     .feedback__title {
@@ -163,6 +237,7 @@
         line-height: 40px;
         font-weight: 400;
         margin-bottom: 0;
+        padding: 0;
     }
     
     .feedback__text {
@@ -184,47 +259,23 @@
     }
     
     .feedback__form input {
-        font-family: $font-PTmono;
         width: 290px;
         height: 52px;
-        box-sizing: border-box;
         margin-bottom: 31px;
         padding-left: 16px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border: none;
-        color: $white;
         font-size: 16px;
         line-height: 22px;
-    
-        &::placeholder {
-            font-family: $font-PTmono;
-            color: $white;
-            font-size: 16px;
-            line-height: 22px;
-          } 
     }
     
     .feedback__form textarea {
-        font-family: $font-PTmono;
         width: 290px;
         height: 104px;
-        box-sizing: border-box;
         margin-bottom: 40px;
         padding-left: 16px;
         padding-top: 10px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border: none;
-        color: $white;
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 0;
-    
-        &::placeholder {
-            font-family: $font-PTmono;
-            color: $white;
-            font-size: 16px;
-            line-height: 22px;
-          }  
     }
     
     .feedback__button {
@@ -241,31 +292,22 @@
         height: 47px;
         border: 1px solid $white;
         border-radius: 5px;
-        margin: 29px 2px;
+        margin: 25px 2px;
         box-sizing: border-box;
         letter-spacing: 1px;
     }
     
     .feedback__agreement {
-        font-family: $font-PTmono;
-        position: relative;
-        display: block;
         padding-top: 2px;
         padding-left: 33px;
         width: 230px;
-        opacity: 0.8;
-        color: $white;
         font-size: 14px;
         line-height: 16px;
+        margin-top: 0;
     
         &::before {
-            content: "";
-            position: absolute;
-            top: 2px;
+            top: 5px;
             left: 0;
-            width: 16px;
-            height: 16px;
-            border: 1px solid #ffffff;
         }
     }
 }
