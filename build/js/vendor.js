@@ -1,6 +1,5 @@
+/* eslint-disable */
 'use strict';
-
-// imaskjs
 
 (function () {
 

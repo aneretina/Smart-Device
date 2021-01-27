@@ -8,6 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
 .footer-copyright__text {
@@ -30,7 +31,9 @@
 }
 
 .footer-copyright__text--develop {
-  margin-left: 342px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer-copyright__text a {
@@ -66,10 +69,6 @@
     text-align: left;
     margin-left: 0;
   }
-
-  .footer-copyright__text--develop {
-    margin-left: 285px;
-  }
 }
 
 @media (max-width: $mobile-width) {
@@ -91,7 +90,7 @@
   }
 
   .footer-copyright__text--develop {
-    margin-left: 0;
+    position: relative;
   }
 
   .footer-copyright__text--rights,

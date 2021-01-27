@@ -21,6 +21,7 @@
 }
 
 .footer-sections__list {
+  font-family: $font-PTmono;
   display: flex;
   flex-direction: row;
   max-height: 500px;
@@ -29,6 +30,9 @@
   margin-top: 28px;
   padding-left: 0;
   overflow: hidden;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
 }
 
 .footer-sections__item {
@@ -58,15 +62,20 @@
 
 @media (max-width: $tablet-width) {
   .footer-sections {
-    margin-top: 13px;
-    margin-left: 19px;
+    margin-top: 15px;
+    margin-left: 17px;
     width: 376px;
-    padding-bottom: 16px;
+    padding-bottom: 36px;
+  }
+
+  .footer-sections__item {
+    margin-bottom: 0;
   }
 
   .footer-sections__list {
     flex-direction: column;
-    margin-left: 0;
+    margin: 24px 0 0 0;
+    max-height: 175px;
   }
 }
 

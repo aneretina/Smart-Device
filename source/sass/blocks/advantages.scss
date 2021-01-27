@@ -25,7 +25,7 @@
   border: 1px solid #ebebeb;
   border-left: 2px solid $blue;
   box-sizing: border-box;
-  padding: 27px 0 0 46px;
+  padding: 31px 0 0 40px;
 
   &:hover {
     border-color: $blue;
@@ -48,6 +48,7 @@
   line-height: 33px;
   color: $blue;
   margin-top: 23px;
+  margin-bottom: 16px;
 }
 
 .advantages__text {
@@ -56,8 +57,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $gray;
-  margin-top: -8px;
-  padding: 1px 2px 3px 4px;
+  padding: 0 45px 0 0;
 }
 
 .advantages__text--providers {
@@ -72,7 +72,7 @@
 
 @media (max-width: $tablet-width) {
   .advantages {
-    padding-top: 52px;
+    padding-top: 36px;
     margin: 0;
   }
 
@@ -83,7 +83,7 @@
   .advantages__item {
     width: 345px;
     margin: 0 26px 30px 0;
-    min-height: 275px;
+    min-height: 307px;
     padding: 25px 14px 8px 25px;
   }
 
@@ -101,7 +101,8 @@
   .advantages__text {
     font-size: 16px;
     line-height: 22px;
-    padding: 6px 5px 0 2px;
+    margin: 0;
+    padding: 0 7px 0 0;
     min-width: 246px;
   }
 
@@ -112,11 +113,11 @@
 
 @media (max-width: $mobile-width) {
   .advantages {
-    padding-top: 14px;
+    padding-top: 0;
   }
 
   .advantages__container {
-    padding-left: 16px;
+    padding-left: 0;
   }
 
   .advantages__list {
@@ -142,7 +143,7 @@
   .advantages__text {
     font-size: 16px;
     line-height: 22px;
-    padding-top: 9px;
+    padding-top: 0;
   }
 
   .advantages__item--confidence {
