@@ -8,8 +8,8 @@
   min-height: 220px;
   margin: 0 auto;
   position: relative;
-  padding-left: 344px;
-  padding-right: 69px;
+  padding-left: 322px;
+  padding-right: 103px;
 }
 
 .info__title {
@@ -64,13 +64,13 @@
   display: block;
   position: absolute;
   top: 3px;
-  left: 131px;
+  left: 113px;
 }
 
 @media (max-width: $tablet-width) {
   .info {
     padding-top: 0;
-    padding-bottom: 81px;
+    padding-bottom: 84px;
   }
 
   .info__container {

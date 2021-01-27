@@ -1,7 +1,7 @@
 .introduction {
   z-index: 0;
   position: relative;
-  padding: 99px 38px;
+  padding: 99px 18px;
   min-height: 563px;
 }
 
@@ -11,8 +11,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 28px;
-    right: -45px;
+    top: 33px;
+    right: -7px;
     width: 611px;
     height: 488px;
     background: url("../img/icon-triangle.svg") left -128px top -164px no-repeat;
@@ -20,9 +20,13 @@
   }
 }
 
+.introduction__content {
+  max-width: 720px;
+}
+
 .introduction__img {
   position: absolute;
-  right: -129px;
+  right: -90px;
   top: 18px;
   z-index: -1;
   display: block;
@@ -38,7 +42,6 @@
   margin: 50px 0 27px 0;
   padding-top: 79px;
   letter-spacing: 6px;
-  max-width: 730px;
 }
 
 .introduction__subtext {
@@ -138,6 +141,10 @@
     }
   }
 
+  .introduction__content {
+    max-width: 454px;
+  }
+
   .introduction__img {
     width: 263px;
     height: 344px;
@@ -200,11 +207,16 @@
     }
   }
 
+  .introduction__content {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .introduction__img {
     width: 301px;
     height: 220px;
     top: 39px;
-    left: 23px;
+    right: 0;
     z-index: -2;
   }
 

@@ -1,4 +1,6 @@
-/* eslint-disable new-cap, no-undef */
+/* eslint-disable no-undef */
+/* eslint-disable new-cap */
+
 'use strict';
 
 var ESC_KEY = 27;
@@ -80,13 +82,12 @@ if (feedbackForm) {
 if (modalForm) {
   modalForm.addEventListener('submit', function (event) {
     event.preventDefault();
-
     localStorage.setItem('name-field', nameField.value);
     localStorage.setItem('phone-field', phoneField.value);
     localStorage.setItem('message-field', messageField.value);
+    closeModal();
   });
 }
-
 
 IMask(phoneFeedback, {mask: '+{7}(000)000-00-00'});
 IMask(phoneField, {mask: '+{7}(000)000-00-00'});

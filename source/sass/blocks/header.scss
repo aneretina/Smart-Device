@@ -48,7 +48,7 @@
 }
 
 .header__item--btn {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 -25px;
 }
 
 .header__callback {
@@ -84,10 +84,11 @@
 
   .header__container {
     padding-left: 22px;
+    padding-right: 18px;
   }
 
   .header__contacts {
-    margin-right: -55px;
+    margin-right: 0;
   }
 
   .header__icon--email {
@@ -122,11 +123,11 @@
 
   .header__container {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
   .header__contacts {
-    margin-right: -70px;
+    margin-right: 0;
     align-items: center;
   }
 

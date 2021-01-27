@@ -1,5 +1,5 @@
 .feedback {
-  background: url("../img/icon-triangle-feedback.svg") left -36px top -60px no-repeat $blue;
+  background: url("../img/icon-triangle-feedback.svg") left -58px top -60px no-repeat $blue;
   background-color: $blue;
   padding: 10px 0 60px 0;
 }
@@ -13,8 +13,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 151px;
-    left: 138px;
+    top: 153px;
+    left: 116px;
     width: 511px;
     height: 288px;
     background-image: url("../img/paper-airplane-desktop@1x.png");
@@ -27,7 +27,7 @@
 }
 
 .feedback__wrapper {
-  margin-right: 108px;
+  margin-right: 131px;
   max-width: 570px;
 }
 
@@ -256,7 +256,7 @@
 
 @media (max-width: $mobile-width) {
   .feedback {
-    padding: 10px 0 82px 0;
+    padding: 10px 0 45px 0;
   }
 
   .feedback__container {

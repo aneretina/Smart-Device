@@ -4,8 +4,8 @@
 }
 
 .services__container {
-  padding-left: 164px;
-  padding-right: 101px;
+  padding-left: 142px;
+  padding-right: 127px;
 }
 
 .services__title {
@@ -93,7 +93,7 @@
 @media (max-width: $tablet-width) {
   .services {
     padding-top: 52px;
-    padding-bottom: 18px;
+    padding-bottom: 22px;
   }
 
   .services__container {
@@ -108,7 +108,7 @@
   .services__list {
     flex-wrap: wrap;
     margin-top: 52px;
-    align-items: center;
+    justify-content: center;
   }
 
   .services-item {

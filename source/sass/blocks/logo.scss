@@ -1,7 +1,12 @@
 .logo {
   display: block;
-  padding-left: 40px;
+  padding-left: 19px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .logo__icon--mobile {

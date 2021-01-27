@@ -1,6 +1,6 @@
-'use strict';
+/* eslint-disable */
 
-// imaskjs
+'use strict';
 
 (function () {
 
@@ -4657,6 +4657,4 @@
 
   }));
   //# sourceMappingURL=imask.js.map
-
-  window.iMaskJS = IMask;
 })();
