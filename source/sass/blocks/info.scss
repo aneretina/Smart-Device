@@ -1,154 +1,137 @@
 .info {
-    padding: 33px 0 82px 0;
+  padding-right: 28px;
+  padding-bottom: 107px;
+  padding-top: 28px;
 }
 
 .info__container {
-    width: 1150px;
-    margin: 0 auto;
-    position: relative;
+  min-height: 220px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 344px;
+  padding-right: 69px;
 }
 
-
 .info__title {
-    font-family: $font-roboto;
-    color: $gray;
-    font-size: 36px;
-    line-height: 51px;
-    font-weight: 400;
-    margin-left: 178px;
+  font-family: $font-roboto;
+  color: $gray;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
 }
 
 .info__text {
-    font-family: $font-PTmono;
-    color: $gray;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    padding-bottom: 10px;
-    margin-top: -12px;
-    margin-left: 178px;
+  font-family: $font-PTmono;
+  color: $gray;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin-top: -8px;
 }
 
-.info__text--span  {
-    margin-left: 1px;
+.info__text--span {
+  margin-left: 1px;
 }
 
 .info__button {
-    display: block;
-    color: $blue;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: $font-roboto;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 700;
-    width: 180px;
-    height: 45px;
-    border: 1px solid;
-    border-radius: 5px;
-    margin-top: 32px;
-    letter-spacing: 1px;
-    box-sizing: border-box;
-    padding-top: 12px;
-    margin-left: 178px;
+  display: block;
+  color: $blue;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-roboto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  width: 180px;
+  height: 45px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 32px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  padding-top: 12px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: $white;
+  }
 }
 
 .info__year {
-    display: block;
-    position: absolute;
-    top: 63px;
-    left: 110px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 131px;
 }
-
 
 @media (max-width: $tablet-width) {
-    .info {
-        padding: 15px 0 50px 0;
-    }
-    
-    .info__container {
-        width: 700px;
-        margin: 0 auto;
-        position: relative;
-        margin-left: 32px;
-    }
+  .info {
+    padding-top: 0;
+    padding-bottom: 81px;
+  }
 
+  .info__container {
+    padding-left: 210px;
+    padding-right: 10px;
+  }
 
-.info__title {
-    color: $gray;
+  .info__title {
     font-size: 32px;
     line-height: 45px;
-}
+    margin-bottom: 21px;
+  }
 
-.info__text--span  {
+  .info__text--span {
     display: none;
-}
+  }
 
-
-.info__text {
-    padding-bottom: 10px;
+  .info__text {
+    padding-bottom: 6px;
     margin-top: 0;
-}
-    
-    .info__year {
-        display: block;
-        top: 2px;
-        left: -28px;
-    }
+  }
+
+  .info__year {
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {
-    .info {
-        padding-top: 54px;
-        padding-bottom: 19px;
-    }
+  .info {
+    padding-top: 58px;
+    padding-bottom: 77px;
+    padding-right: 0;
+  }
 
-    .info__container {
-        margin: 0 auto;
-        width: 290px;
-    }
-    
-    .info__title {
-        font-family: $font-roboto;
-        color: $gray;
-        font-size: 28px;
-        line-height: 40px;
-        font-weight: 400;
-        margin: 0;
-        padding-bottom: 17px;
-    }
-    
-    .info__text {
-        font-family: $font-PTmono;
-        color: $gray;
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 400;
-        padding-bottom: 42px;
-        padding-right: 0;
-        margin: 0;
-    }
-    
-    .info__button {
-        display: block;
-        color: $blue;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: $font-roboto;
-        font-size: 14px;
-        line-height: 16px;
-        font-weight: 700;
-        width: 180px;
-        height: 45px;
-        border: 1px solid;
-        border-radius: 5px;
-        margin: -13px 0;
-        letter-spacing: 1px;
-        box-sizing: border-box;
-        padding-top: 12px;
-    }
-    
-    .info__year {
-        display: none;
-    }    
+  .info__container {
+    padding-left: 16px;
+    padding-right: 7px;
+  }
+
+  .info__title {
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
+    padding-bottom: 17px;
+  }
+
+  .info__text {
+    padding-bottom: 42px;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .info__button {
+    width: 180px;
+    height: 45px;
+    margin: -13px 0;
+    padding-top: 12px;
+  }
+
+  .info__year {
+    display: none;
+  }
 }

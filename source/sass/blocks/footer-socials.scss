@@ -1,141 +1,125 @@
 .footer-socials {
-    color: $black-bg;
-    padding-top: 50px;
-    padding-left: 8px;
-    padding-bottom: 48px;
-}
-
-.footer__container {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+  color: $black-bg;
+  padding-top: 50px;
+  padding-left: 8px;
+  padding-bottom: 48px;
 }
 
 .footer-socials__logo-icon {
-    margin-left: 9px;
-    margin-top: 16px;
+  margin-left: 9px;
+  margin-top: 16px;
 }
 
 .footer-socials__container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
 .footer-socials__list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 112px;
-    margin-left: 10px;
-    margin-top: 49px;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+  margin-left: 10px;
+  margin-top: 49px;
+  padding: 0;
 }
 
 .footer-socials__text {
-    font-family: $font-PTmono;
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: left;
-    text-transform: uppercase;
-    opacity: 0.5;
-    padding-top: 9px;
-    letter-spacing: 1px;
-}
-
-.footer-socials__img {
-    width: 27px;
-    height: 27px;
+  font-family: $font-PTmono;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-top: 9px;
+  letter-spacing: 1px;
 }
 
 .footer-socials__text--copyright {
-    display: none;
+  display: none;
+}
+
+.footer-socials__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: $tablet-width) {
-    .footer-socials {
-        padding-top: 0;
-        padding-left: 15px;
-        padding-bottom: 0;
-    }
-    
-    .footer__container {
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .footer-socials__logo-icon {
-        margin-left: 9px;
-        margin-top: 16px;
-    }
-    
-    .footer-socials__container {
-        display: flex;
-        flex-direction: row;
-        width: 733px;
-        justify-content: space-between;
-    }
-    
-    
-    .footer-socials__list {
-        margin-top: 30px;
-    }
-    
-    .footer-socials__text--copyright {
-        display: block;
-    }
+  .footer-socials {
+    padding-top: 0;
+    padding-left: 6px;
+    padding-bottom: 0;
+  }
 
-    .footer-socials__text {
-        text-align: center;
-        padding-top: 24px;
-        padding-left: 28px;
-    }
-    
-    .footer-socials__img {
-        width: 27px;
-        height: 27px;
-    }
+  .footer-socials__logo-icon {
+    margin-left: 9px;
+    margin-top: 16px;
+  }
 
+  .footer-socials__container {
+    flex-direction: row;
+    width: 733px;
+    justify-content: space-between;
+  }
+
+  .footer-socials__list {
+    margin-top: 30px;
+  }
+
+  .footer-socials__text--copyright {
+    display: block;
+  }
+
+  .footer-socials__text {
+    text-align: center;
+    padding-top: 24px;
+    padding-left: 28px;
+  }
+
+  .footer-socials__img {
+    width: 27px;
+    height: 27px;
+  }
 }
 
 @media (max-width: $mobile-width) {
-    .footer__container {
-        max-width: 320px;
-        margin: 0 auto;
-    }
+  .footer-socials {
+    color: $black-bg;
+  }
 
-    .footer-socials {
-        color: $black-bg;
-    }
+  .footer-socials__container {
+    flex-direction: column;
+    width: 280px;
+    padding-top: 29px;
+  }
 
-    .footer-socials__container {
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        padding-top: 33px;
-        justify-content: space-between;
-    }
-    
-    .footer-socials__logo {
-        margin-left: 26px;
-    }
-    
-    .footer-socials__list {
-        margin-left: 89px;
-        margin-top: 17px;
-        
-    }
-    
-    .footer-socials__text {
-        padding-top: 9px;
-        padding-left: 11px;
-        letter-spacing: 0.5px;
-    }
-    
-    .footer-socials__img {
-        width: 27px;
-        height: 27px;
-    }
+  .footer-socials__logo {
+    margin-left: 26px;
+  }
+
+  .footer-socials__list {
+    margin-left: 89px;
+    margin-top: 17px;
+  }
+
+  .footer-socials__text {
+    padding-top: 9px;
+    padding-left: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-socials__img {
+    width: 27px;
+    height: 27px;
+  }
 }

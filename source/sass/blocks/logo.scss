@@ -1,27 +1,35 @@
+.logo {
+  display: block;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.logo__icon--mobile {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
   .logo {
-      display: block;
+    padding-left: 2px;
   }
 
+  .logo__icon {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+@media (max-width: $mobile-width) {
   .logo__icon--mobile {
+    display: block;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+
+  .logo__icon {
     display: none;
   }
-  
-  @media (max-width: $tablet-width) {
-    .logo__icon {
-      width: 202px;
-      height: 59px;
 }
-  }
-  
-  @media (max-width: $mobile-width) {
-    .logo__icon--mobile {
-      display: block;
-    }
-
-    .logo__icon {
-      display: none;
-}
-}
-
-  
-  

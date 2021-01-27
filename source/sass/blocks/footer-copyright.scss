@@ -1,56 +1,75 @@
 .footer-copyright {
-  padding-left: 23px;
   padding-top: 0;
-  display: flex;
   border-top: 1px solid rgba(98, 105, 98, 0.2);
+}
+
+.footer-copyright__container {
+  padding-left: 40px;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .footer-copyright__text {
-    font-family: $font-PTmono;
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-bottom: 2px;
-    display: block;
-    margin-right: 67px;
-    opacity: 0.5;
-    letter-spacing: 0.3px;
+  font-family: $font-PTmono;
+  min-width: 228px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  display: block;
+  margin-right: 60;
+  opacity: 0.5;
+  letter-spacing: 0.3px;
+  color: $black-bg;
 }
 
 .footer-copyright__text--conditions {
-  margin-left: 88px;
+  margin-left: 146px;
 }
 
 .footer-copyright__text--develop {
-  margin-left: 291px;
+  margin-left: 342px;
 }
 
+.footer-copyright__text a {
+  display: block;
+  color: $black-bg;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
 
 @media (max-width: $tablet-width) {
   .footer-copyright {
-    padding-left: 33px;
-    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .footer-copyright__container {
+    padding-left: 27px;
+    padding-top: 5px;
   }
 
   .footer-copyright__text--rights,
   .footer-copyright__text--register {
     display: none;
   }
-  
-  
+
   .footer-copyright__text {
     text-align: left;
     margin-left: 0;
   }
 
   .footer-copyright__text--develop {
-    margin-left: 204px;
+    margin-left: 285px;
   }
-  
 }
 
 @media (max-width: $mobile-width) {
@@ -60,21 +79,15 @@
 
   .footer-copyright__container {
     width: 290px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-top: 16px;
   }
-  
+
   .footer-copyright__text {
-      font-family: $font-PTmono;
-      font-size: 13px;
-      line-height: 24px;
-      font-weight: 400;
-      text-transform: uppercase;
-      padding-left: 2px;
-      margin-top: 10px;
+    padding-left: 2px;
+    margin-top: 10px;
   }
 
   .footer-copyright__text--develop {
@@ -85,5 +98,4 @@
   .footer-copyright__text--register {
     display: none;
   }
-    }
-    
+}

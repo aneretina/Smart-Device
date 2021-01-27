@@ -1,0 +1,10 @@
+.company-info {
+  background: url("../img/icon-triangle-company.svg") left -212px top -28px no-repeat transparent;
+  z-index: -1;
+}
+
+@media (max-width: $tablet-width) {
+  .company-info {
+    background: $white;
+  }
+}

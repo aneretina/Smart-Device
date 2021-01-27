@@ -1,313 +1,325 @@
 .feedback {
-    background-color: $blue;
-    padding: 10px 0 60px 0;
-    background: url("../img/icon-triangle-feedback.svg") left 174px top -60px no-repeat $blue;
+  background: url("../img/icon-triangle-feedback.svg") left -36px top -60px no-repeat $blue;
+  background-color: $blue;
+  padding: 10px 0 60px 0;
 }
 
-.feedback__container  {
-    position: relative;
-    display: flex;
-    width: 1150px;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0 auto;
+.feedback__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 150px;
-        left: -24px;
-        width: 511px;
-        height: 288px;
-        background-image: url("../img/paper-airplane-desktop@1x.png");
-        background-position: center;
-    
-        @media (min-resolution: $retina-dppx) {
-          background-image: url("../img/paper-airplane-desktop@2x.png");
-        }
-      }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 151px;
+    left: 138px;
+    width: 511px;
+    height: 288px;
+    background-image: url("../img/paper-airplane-desktop@1x.png");
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/paper-airplane-desktop@2x.png");
+    }
+  }
 }
 
 .feedback__wrapper {
-    margin-right: -18px;
-    max-width: 570px;
+  margin-right: 108px;
+  max-width: 570px;
 }
 
 .feedback__title {
-    font-family: $font-roboto;
-    color: $white;
-    font-size: 36px;
-    line-height: 50px;
-    font-weight: 400;
-    margin-bottom: 0;
-    padding-top: 54px;
+  font-family: $font-roboto;
+  color: $white;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-top: 54px;
 }
 
 .feedback__text {
-    font-family: $font-PTmono;
-    margin-top: 12px;
-    color: $white;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    text-align: left;
+  font-family: $font-PTmono;
+  margin-top: 12px;
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .feedback__form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .feedback__form input {
+  font-family: $font-PTmono;
+  width: 270px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-bottom: 31px;
+  padding-left: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+
+  &::placeholder {
     font-family: $font-PTmono;
-    width: 270px;
-    height: 50px;
-    box-sizing: border-box;
-    margin-bottom: 31px;
-    padding-left: 16px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
     color: $white;
     font-size: 16px;
     line-height: 22px;
+  }
 
-    &::placeholder {
-        font-family: $font-PTmono;
-        color: $white;
-        font-size: 16px;
-        line-height: 22px;
-      }    
+  &:hover,
+  &:focus {
+    border: solid 1px $black-bg;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: solid 2px $black-bg;
+  }
 }
 
 .feedback__form textarea {
+  font-family: $font-PTmono;
+  width: 570px;
+  height: 154px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0;
+
+  &::placeholder {
     font-family: $font-PTmono;
-    width: 570px;
-    height: 154px;
-    box-sizing: border-box;
-    padding-left: 16px;
-    padding-top: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
     color: $white;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 0;
+  }
 
-    &::placeholder {
-        font-family: $font-PTmono;
-        color: $white;
-        font-size: 16px;
-        line-height: 22px;
-      }  
+  &:hover,
+  &:focus {
+    border: solid 1px $black-bg;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: solid 2px $black-bg;
+  }
 }
 
 .feedback__button {
-    display: block;
-    background-color: transparent;
-    color: $white;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: $font-roboto;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 700;
-    width: 270px;
-    height: 45px;
-    border: 1px solid $white;
-    border-radius: 5px;
-    margin: 51px 2px;
-    box-sizing: border-box;
-    letter-spacing: 1px;
+  display: block;
+  background-color: transparent;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-roboto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  width: 270px;
+  height: 45px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  margin: 51px 2px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+  }
 }
 
 .feedback__agreement {
-    font-family: $font-PTmono;
-    position: relative;
-    display: block;
-    margin-top: 56px;
-    padding-left: 33px;
-    width: 230px;
-    opacity: 0.8;
-    color: $white;
-    font-size: 14px;
-    line-height: 16px;
+  font-family: $font-PTmono;
+  position: relative;
+  display: block;
+  margin-top: 56px;
+  padding-left: 33px;
+  width: 230px;
+  opacity: 0.8;
+  color: $white;
+  font-size: 14px;
+  line-height: 16px;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 0;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ffffff;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 4px;
+    left: 3px;
+    width: 12px;
+    height: 7px;
+    background-image: url("../img/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.feedback__agreement-input:checked + .feedback__agreement::after {
+  display: block;
+}
+
+.feedback__agreement:hover::before {
+  border: solid 2px #62d1ba;
 }
 
 @media (max-width: $tablet-width) {
-    .feedback {
-        background: $blue;
-        padding: 10px 0 56px 0;
+  .feedback {
+    background: $blue;
+    padding: 10px 0 61px 0;
+  }
+
+  .feedback__container {
+    &::before {
+      display: none;
     }
+  }
 
-    .feedback__container  {
-        position: relative;
-        display: flex;
-        width: 718px;
-        flex-direction: column;
-        align-items: flex-end;
-        margin: 0 auto;
-    
-        &::before {
-                display: none;
-              }
-    }
-
-
-.feedback__wrapper {
+  .feedback__wrapper {
     margin: 0 auto;
     max-width: 590px;
-}
+  }
 
-.feedback__title {
+  .feedback__title {
     font-size: 32px;
     line-height: 45px;
     margin-bottom: 0;
     padding-top: 42px;
-}
+  }
 
-.feedback__text {
+  .feedback__text {
     margin-top: 17px;
-}
+  }
 
-.feedback__form input {
+  .feedback__form input {
     width: 279px;
     height: 52px;
     margin-bottom: 44px;
     padding-left: 16px;
-    font-size: 16px;
-    line-height: 22px;
-}
+  }
 
-.feedback__form textarea {
+  .feedback__form textarea {
     width: 590px;
     height: 160px;
-}
+  }
 
-
-.feedback__button {
+  .feedback__button {
     width: 280px;
     height: 46px;
     margin: 46px 2px;
-}
+  }
 
-.feedback__agreement {
+  .feedback__agreement {
     margin-top: 55px;
     padding-left: 55px;
 
     &::before {
-        top: 0;
-        left: 17px;
+      top: 0;
+      left: 17px;
     }
-}
+
+    &::after {
+      top: 4px;
+      left: 21px;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
-    .feedback {
-        background-color: $blue;
-        padding: 10px 0 44px 0;
+  .feedback {
+    padding: 10px 0 44px 0;
+  }
+
+  .feedback__container {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .feedback__title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .feedback__text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .feedback__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  .feedback__form input {
+    width: 290px;
+    height: 52px;
+    margin-bottom: 31px;
+    padding-left: 16px;
+  }
+
+  .feedback__form textarea {
+    width: 290px;
+    height: 104px;
+    padding-left: 16px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .feedback__button {
+    width: 290px;
+    height: 47px;
+    margin: 25px 2px;
+  }
+
+  .feedback__agreement {
+    padding-top: 6px;
+    padding-left: 33px;
+    width: 230px;
+    margin-top: 0;
+
+    &::before {
+      top: 5px;
+      left: 0;
     }
 
-    .feedback__container  {
-        width: 290px;
-        flex-direction: column;
-        align-items: flex-end;
-        margin: 0 auto;
+    &::after {
+      top: 10px;
+      left: 3px;
     }
-
-    .feedback__wrapper {
-        max-width: 320px;
-    }
-    
-    .feedback__title {
-        font-family: $font-roboto;
-        color: $white;
-        font-size: 28px;
-        line-height: 40px;
-        font-weight: 400;
-        margin-bottom: 0;
-        padding: 0;
-    }
-    
-    .feedback__text {
-        font-family: $font-PTmono;
-        margin-top: 12px;
-        color: $white;
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 400;
-        text-align: left;
-    }
-    
-    .feedback__form {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 24px;
-    }
-    
-    .feedback__form input {
-        width: 290px;
-        height: 52px;
-        margin-bottom: 31px;
-        padding-left: 16px;
-        font-size: 16px;
-        line-height: 22px;
-    }
-    
-    .feedback__form textarea {
-        width: 290px;
-        height: 104px;
-        margin-bottom: 40px;
-        padding-left: 16px;
-        padding-top: 10px;
-        font-size: 16px;
-        line-height: 22px;
-        margin-bottom: 0;
-    }
-    
-    .feedback__button {
-        display: block;
-        background-color: transparent;
-        color: $white;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: $font-roboto;
-        font-size: 14px;
-        line-height: 16px;
-        font-weight: 700;
-        width: 290px;
-        height: 47px;
-        border: 1px solid $white;
-        border-radius: 5px;
-        margin: 25px 2px;
-        box-sizing: border-box;
-        letter-spacing: 1px;
-    }
-    
-    .feedback__agreement {
-        padding-top: 2px;
-        padding-left: 33px;
-        width: 230px;
-        font-size: 14px;
-        line-height: 16px;
-        margin-top: 0;
-    
-        &::before {
-            top: 5px;
-            left: 0;
-        }
-    }
+  }
 }
