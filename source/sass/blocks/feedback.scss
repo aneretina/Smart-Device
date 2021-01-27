@@ -5,16 +5,21 @@
 }
 
 .feedback__container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.feedback__wrapper {
+  position: relative;
+  margin-right: 131px;
+  max-width: 570px;
 
   &::before {
     content: "";
     position: absolute;
     top: 153px;
-    left: 116px;
+    left: -621px;
     width: 511px;
     height: 288px;
     background-image: url("../img/paper-airplane-desktop@1x.png");
@@ -24,11 +29,6 @@
       background-image: url("../img/paper-airplane-desktop@2x.png");
     }
   }
-}
-
-.feedback__wrapper {
-  margin-right: 131px;
-  max-width: 570px;
 }
 
 .feedback__title {
