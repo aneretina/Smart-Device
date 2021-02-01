@@ -1,6 +1,4 @@
 .logo {
-  display: block;
-  padding-left: 19px;
   cursor: pointer;
 
   &:hover,
@@ -9,23 +7,24 @@
   }
 }
 
-.logo__icon--mobile {
+.logo--desktop {
+  padding-left: 12px;
+  display: block;
+}
+
+.logo--mobile {
   display: none;
 }
 
 @media (max-width: $tablet-width) {
-  .logo {
-    padding-left: 2px;
-  }
-
-  .logo__icon {
+  .logo--desktop {
     width: 202px;
     height: 59px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .logo__icon--mobile {
+  .logo--mobile {
     display: block;
 
     &:hover,
@@ -34,7 +33,7 @@
     }
   }
 
-  .logo__icon {
+  .logo--desktop {
     display: none;
   }
 }

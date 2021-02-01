@@ -3,16 +3,3 @@
   margin: 0 auto;
 }
 
-@media (max-width: $tablet-width) {
-  .container {
-    max-width: 755px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .container {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}

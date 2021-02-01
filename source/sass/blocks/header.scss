@@ -3,7 +3,7 @@
   z-index: 2;
   position: relative;
   background-size: cover;
-  padding: 25px 0 27px;
+  padding: 28px 0 32px;
 }
 
 .header__container {
@@ -14,20 +14,22 @@
 
 .header__contacts {
   display: flex;
+  flex: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
   align-items: center;
-  margin-right: 8px;
 }
 
 .header__item {
-  margin-right: 68px;
+  margin-right: 14px;
+  margin-left: 37px;
 }
 
 .header__item--phone {
-  margin-left: 0;
+  margin-left: 63px;
 }
+
 
 .header__link {
   position: relative;
@@ -47,11 +49,7 @@
   margin-right: 13px;
 }
 
-.header__item--btn {
-  margin: 0 0 0 -25px;
-}
-
-.header__callback {
+.header__item--btn a {
   display: inline-block;
   vertical-align: middle;
   color: $white;
@@ -83,17 +81,28 @@
   }
 
   .header__container {
-    padding-left: 22px;
-    padding-right: 18px;
+    padding-left: 14px;
+    padding-right: 9px;
   }
 
   .header__contacts {
+    margin-right: 3px;
+    min-width: 0;
+  }
+
+  .header__item {
     margin-right: 0;
+    margin-left: 0;
+  }
+
+  .header__item--phone {
+    margin-left: 0;
   }
 
   .header__icon--email {
     width: 25px;
     height: 19px;
+    margin-right: 33px;
   }
 
   .header__icon--phone {
@@ -101,16 +110,11 @@
     height: 24px;
   }
 
-  .header__item {
-    margin-right: 11px;
-  }
-
-  .header__callback {
+  .header__item--btn a {
     display: none;
   }
 
-  .header__email,
-  .header__phone {
+  .header__link span {
     display: none;
   }
 }
@@ -118,12 +122,12 @@
 @media (max-width: $mobile-width) {
   .header {
     padding-top: 16px;
-    min-height: 632px;
+    min-height: 631px;
   }
 
   .header__container {
-    padding-left: 15px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 0;
   }
 
   .header__contacts {
@@ -133,7 +137,7 @@
 
   .header__item {
     display: block;
-    margin-right: 5px;
+    margin-right: 0;
   }
 
   .header__link {
@@ -141,12 +145,16 @@
     margin: 0;
   }
 
-  .header__callback {
+  .header__item--btn a {
     display: none;
   }
 
   .header__email,
   .header__phone {
     display: none;
+  }
+
+  .header__icon--email {
+    margin-right: 26px;
   }
 }

@@ -1,7 +1,7 @@
 .feedback {
-  background: url("../img/icon-triangle-feedback.svg") left -58px top -60px no-repeat $blue;
+  background: url("../img/icon-triangle-feedback.svg") left 179px top -60px no-repeat $blue;
   background-color: $blue;
-  padding: 10px 0 60px 0;
+  padding: 10px 40px 113px;
 }
 
 .feedback__container {
@@ -12,8 +12,9 @@
 
 .feedback__wrapper {
   position: relative;
-  margin-right: 131px;
   max-width: 570px;
+  margin-left: auto;
+  margin-right: 136px;
 
   &::before {
     content: "";
@@ -25,13 +26,14 @@
     background-image: url("../img/paper-airplane-desktop@1x.png");
     background-position: center;
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/paper-airplane-desktop@2x.png");
+      background-size: 511px 288px;
     }
   }
 }
 
-.feedback__title {
+.feedback h2 {
   font-family: $font-roboto;
   color: $white;
   font-size: 36px;
@@ -41,7 +43,7 @@
   padding-top: 54px;
 }
 
-.feedback__text {
+.feedback p {
   font-family: $font-PTmono;
   margin-top: 12px;
   color: $white;
@@ -58,13 +60,14 @@
   margin-top: 50px;
 }
 
-.feedback__form input {
+.feedback__form input[type="text"],
+.feedback__form input[type="tel"] {
   font-family: $font-PTmono;
-  width: 270px;
+  width: calc(50% - 15px);
   height: 50px;
   box-sizing: border-box;
-  margin-bottom: 31px;
-  padding-left: 16px;
+  margin-bottom: 35px;
+  padding-left: 18px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   color: $white;
@@ -76,55 +79,57 @@
     color: $white;
     font-size: 16px;
     line-height: 22px;
+    opacity: 0.5;
   }
 
   &:hover,
   &:focus {
     border: solid 1px $black-bg;
-    opacity: 0.5;
+    color: $white;
   }
 
   &:active {
-    opacity: 0.3;
     border: solid 2px $black-bg;
   }
 }
 
 .feedback__form textarea {
   font-family: $font-PTmono;
-  width: 570px;
+  width: 100%;
   height: 154px;
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-top: 10px;
+  padding-left: 21px;
+  padding-top: 15px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   color: $white;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 0;
+  margin-bottom: 48px;
+  resize: none;
 
   &::placeholder {
     font-family: $font-PTmono;
     color: $white;
     font-size: 16px;
     line-height: 22px;
+    opacity: 0.5;
   }
 
   &:hover,
   &:focus {
     border: solid 1px $black-bg;
-    opacity: 0.5;
+    color: $white;
   }
 
   &:active {
-    opacity: 0.3;
     border: solid 2px $black-bg;
   }
 }
 
-.feedback__button {
+ .feedback__form button {
   display: block;
+  cursor: pointer;
   background-color: transparent;
   color: $white;
   text-transform: uppercase;
@@ -137,7 +142,6 @@
   height: 45px;
   border: 1px solid $white;
   border-radius: 5px;
-  margin: 51px 2px;
   box-sizing: border-box;
   letter-spacing: 1px;
 
@@ -150,9 +154,10 @@
 
 .feedback__agreement {
   font-family: $font-PTmono;
+  cursor: pointer;
   position: relative;
   display: block;
-  margin-top: 56px;
+  margin-top: 8px;
   padding-left: 33px;
   width: 230px;
   opacity: 0.8;
@@ -160,87 +165,98 @@
   font-size: 14px;
   line-height: 16px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid #ffffff;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: none;
-    top: 4px;
-    left: 3px;
-    width: 12px;
-    height: 7px;
-    background-image: url("../img/icon-check.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
-.feedback__agreement-input:checked + .feedback__agreement::after {
-  display: block;
+.feedback__agreement input[type="checkbox"] + .feedback__agreement-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
 }
 
-.feedback__agreement:hover::before {
-  border: solid 2px #62d1ba;
+.feedback__agreement input[type="checkbox"]:checked + .feedback__agreement-span::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 12px;
+  height: 7px;
+  background-image: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (max-width: $tablet-width) {
   .feedback {
     background: $blue;
-    padding: 10px 0 61px 0;
+    padding-bottom: 60px;
   }
 
   .feedback__container {
+    padding-left: 51px;
+
     &::before {
       display: none;
     }
   }
 
   .feedback__wrapper {
-    margin: 0 auto;
-    max-width: 590px;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: none;
+    padding-right: 44px;
+
+  &::before {
+    content: "";
+    display: none;
+   }
   }
 
-  .feedback__title {
+  .feedback h2 {
     font-size: 32px;
     line-height: 45px;
     margin-bottom: 0;
-    padding-top: 42px;
+    margin-top: 14px;
   }
 
-  .feedback__text {
+  .feedback p {
     margin-top: 17px;
+    margin-bottom: 0;
   }
 
-  .feedback__form input {
-    width: 279px;
+  .feedback__form {
+    margin-top: 56px;
+  }
+
+  .feedback__form input[type="text"],
+  .feedback__form input[type="tel"] {
     height: 52px;
-    margin-bottom: 44px;
-    padding-left: 16px;
+    margin-bottom: 40px;
+    padding-left: 19px;
   }
 
   .feedback__form textarea {
-    width: 590px;
+    padding-top: 11px;
     height: 160px;
+    margin-bottom: 0;
   }
 
-  .feedback__button {
+  .feedback__form button {
     width: 280px;
     height: 46px;
-    margin: 46px 2px;
+    margin: 43px 2px;
   }
 
   .feedback__agreement {
-    margin-top: 55px;
-    padding-left: 55px;
+    margin-top: 52px;
+    padding-left: 0;
+    margin-right: 10px;
 
     &::before {
       top: 0;
@@ -252,26 +268,38 @@
       left: 21px;
     }
   }
+
+
+  .feedback__agreement input[type="checkbox"] + .feedback__agreement-span {
+    left: -34px;
+}
+
 }
 
 @media (max-width: $mobile-width) {
   .feedback {
-    padding: 10px 0 45px 0;
+    padding: 12px 0 40px;
   }
+
 
   .feedback__container {
-    width: 290px;
-    margin: 0 auto;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
-  .feedback__title {
+  .feedback__wrapper {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .feedback h2 {
     font-size: 28px;
     line-height: 40px;
     margin-bottom: 0;
     padding: 0;
   }
 
-  .feedback__text {
+  .feedback p {
     margin-top: 12px;
     font-size: 16px;
     line-height: 22px;
@@ -285,41 +313,37 @@
     margin-top: 24px;
   }
 
-  .feedback__form input {
-    width: 290px;
+  .feedback__form input[type="text"],
+  .feedback__form input[type="tel"] {
+    width: 100%;
     height: 52px;
     margin-bottom: 31px;
-    padding-left: 16px;
+    padding-left: 19px;
   }
 
   .feedback__form textarea {
-    width: 290px;
+    width: 100%;
     height: 104px;
     padding-left: 16px;
     padding-top: 10px;
     margin-bottom: 0;
   }
 
-  .feedback__button {
-    width: 290px;
-    height: 47px;
-    margin: 25px 2px;
+  .feedback__agreement {
+    padding-top: 5px;
+    padding-left: 35px;
+    width: 100%;
+    margin-top: 0;
   }
 
-  .feedback__agreement {
-    padding-top: 6px;
-    padding-left: 33px;
-    width: 230px;
-    margin-top: 0;
+  .feedback__agreement input[type="checkbox"] + .feedback__agreement-span {
+    top: 4px;
+    left: 1px;
+  }
 
-    &::before {
-      top: 5px;
-      left: 0;
-    }
-
-    &::after {
-      top: 10px;
-      left: 3px;
-    }
+  .feedback__form button {
+    width: 100%;
+    height: 46px;
+    margin: 28px 0;
   }
 }

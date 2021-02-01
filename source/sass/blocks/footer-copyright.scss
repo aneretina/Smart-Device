@@ -4,36 +4,36 @@
 }
 
 .footer-copyright__container {
-  padding-left: 40px;
+  padding-left: 24px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  position: relative;
 }
 
 .footer-copyright__text {
   font-family: $font-PTmono;
-  min-width: 228px;
+  min-width: 224px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-bottom: 2px;
+  margin: 0;
   display: block;
-  margin-right: 60;
   opacity: 0.5;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.15px;
   color: $black-bg;
 }
 
-.footer-copyright__text--conditions {
-  margin-left: 146px;
+.footer-copyright__text--rights {
+  padding: 1em 0 1em 0;
+}
+
+.footer-copyright__text--register {
+  padding-right: 151px;
 }
 
 .footer-copyright__text--develop {
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-left: auto;
 }
 
 .footer-copyright__text a {
@@ -53,11 +53,12 @@
 @media (max-width: $tablet-width) {
   .footer-copyright {
     padding-left: 0;
+    padding-top: 11px;
   }
 
   .footer-copyright__container {
     padding-left: 27px;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   .footer-copyright__text--rights,
@@ -69,6 +70,14 @@
     text-align: left;
     margin-left: 0;
   }
+
+  .footer-copyright__text--conditions {
+    margin-left: 0;
+  }
+
+  .footer-copyright__text--develop {
+    margin-left: auto;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -77,24 +86,32 @@
   }
 
   .footer-copyright__container {
-    width: 290px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding-top: 20px;
   }
 
   .footer-copyright__text {
-    padding-left: 2px;
-    margin-top: 10px;
+    padding-left: 0;
+    margin-top: 0;
+    letter-spacing: 0.9px;
+  }
+
+  .footer-copyright__text--conditions {
+    min-width: 0;
+    margin: 0;
   }
 
   .footer-copyright__text--develop {
-    position: relative;
+    margin: 0;
   }
 
   .footer-copyright__text--rights,
   .footer-copyright__text--register {
     display: none;
+  }
+
+  .footer-copyright__text {
+    padding-bottom: 21px;
   }
 }
