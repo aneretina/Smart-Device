@@ -101,6 +101,7 @@
       localStorage.setItem('name-input', nameFeedback.value);
       localStorage.setItem('phone-input', phoneFeedback.value);
       localStorage.setItem('message-input', messageFeedback.value);
+      feedbackForm.reset();
     });
   }
 

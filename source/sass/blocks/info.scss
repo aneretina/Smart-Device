@@ -61,7 +61,7 @@
   }
 }
 
-.info__year {
+.info img {
   display: block;
   position: absolute;
   top: 3px;
@@ -93,7 +93,7 @@
     margin-top: 0;
   }
 
-  .info__year {
+  .info img {
     top: 0;
     left: 0;
     width: 251px;
@@ -138,7 +138,7 @@
     padding-top: 12px;
   }
 
-  .info__year {
+  .info img {
     display: none;
   }
 }
