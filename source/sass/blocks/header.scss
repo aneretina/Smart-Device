@@ -45,7 +45,7 @@
   }
 }
 
-.header__icon {
+.header__item svg {
   margin-right: 13px;
 }
 
@@ -99,13 +99,13 @@
     margin-left: 0;
   }
 
-  .header__icon--email {
+  .header__item--email svg {
     width: 25px;
     height: 19px;
     margin-right: 33px;
   }
 
-  .header__icon--phone {
+  .header__item--phone svg {
     width: 24px;
     height: 24px;
   }
@@ -149,12 +149,7 @@
     display: none;
   }
 
-  .header__email,
-  .header__phone {
-    display: none;
-  }
-
-  .header__icon--email {
+  .header__item--email svg {
     margin-right: 26px;
   }
 }

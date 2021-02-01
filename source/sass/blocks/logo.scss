@@ -7,24 +7,24 @@
   }
 }
 
-.logo--desktop {
+.logo__desktop {
   padding-left: 12px;
   display: block;
 }
 
-.logo--mobile {
+.logo__mobile {
   display: none;
 }
 
 @media (max-width: $tablet-width) {
-  .logo--desktop {
+  .logo__desktop {
     width: 202px;
     height: 59px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .logo--mobile {
+  .logo__mobile {
     display: block;
 
     &:hover,
@@ -33,7 +33,7 @@
     }
   }
 
-  .logo--desktop {
+  .logo__desktop {
     display: none;
   }
 }

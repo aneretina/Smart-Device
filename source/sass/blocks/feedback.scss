@@ -127,7 +127,7 @@
   }
 }
 
- .feedback__form button {
+.feedback__form button {
   display: block;
   cursor: pointer;
   background-color: transparent;
@@ -212,10 +212,10 @@
     max-width: none;
     padding-right: 44px;
 
-  &::before {
-    content: "";
-    display: none;
-   }
+    &::before {
+      content: "";
+      display: none;
+    }
   }
 
   .feedback h2 {
@@ -272,8 +272,7 @@
 
   .feedback__agreement input[type="checkbox"] + .feedback__agreement-span {
     left: -34px;
-}
-
+  }
 }
 
 @media (max-width: $mobile-width) {

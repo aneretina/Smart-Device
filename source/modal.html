@@ -6,20 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" />
     <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" />
-    <link rel="preload" href="fonts/roboto-condensed-bold.woff" as="font" type="font/woff" />
-    <link rel="preload" href="fonts/roboto-condensed-regular.woff" as="font" type="font/woff" />
-    <link rel="preload" href="fonts/pt-mono-regular.woff" as="font" type="font/woff" />
     <link rel="preload" href="fonts/pt-mono-regular.woff2" as="font" type="font/woff2" />
   </head>
   <body>
     <main>
       <div class="modal modal__page">
         <div class="modal__container container">
-          <button class="modal__close-btn modal__close-btn--page" type="button">Закрыть</button>
-          <h2 class="modal__title">Закажите звонок</h2>
-          <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <button class="modal__close-btn" type="button">Закрыть</button>
+          <h2>Закажите звонок</h2>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <form class="form" method="GET">
             <label class="visually-hidden" for="name-field">Имя</label>
             <input type="text" name="name-field" id="name-field" placeholder="Имя" required />
@@ -28,7 +24,7 @@
             <label class="visually-hidden" for="message-field">Ваш вопрос</label>
             <textarea name="message-field" id="message-field" placeholder="Ваш вопрос" required></textarea>
             <div class="form__submit">
-              <button class="form__submit-btn" type="submit">Отправить</button>
+              <button type="submit">Отправить</button>
               <label class="form__submit-label" >
               <input class="visually-hidden" type="checkbox" required>
               <span class="form__submit-span"></span>

@@ -35,7 +35,7 @@
   margin-left: 1px;
 }
 
-.info__button {
+.info a {
   display: block;
   color: $blue;
   text-transform: uppercase;
@@ -96,9 +96,11 @@
   .info__year {
     top: 0;
     left: 0;
+    width: 251px;
+    height: 353px;
   }
 
-  .info__button {
+  .info a {
     margin-top: 40px;
   }
 }
@@ -129,7 +131,7 @@
     padding-top: 0;
   }
 
-  .info__button {
+  .info a {
     width: 180px;
     height: 45px;
     margin: -13px 0;

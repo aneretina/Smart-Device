@@ -17,7 +17,7 @@
 }
 
 .advantages__item {
-  width: calc(50% - 15px);;
+  width: calc(50% - 15px);
   min-height: 299px;
   margin: 0 0 30px;
   display: block;
@@ -32,9 +32,9 @@
     border-color: $blue;
     background-color: $blue;
 
-    & .advantages__title,
-    & .advantages__text,
-    & .advantages__icon {
+    &.advantages__item h3,
+    &.advantages__item p,
+    &.advantages__item svg {
       color: $white;
       stroke: $white;
     }
