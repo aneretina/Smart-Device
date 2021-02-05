@@ -49,8 +49,8 @@
   right: 22px;
   width: 40px;
   height: 40px;
-  background: url("../img/icon-modal-close.svg") top right no-repeat transparent;
-  background-size: 20px 20px;
+  background: url("../img/icon-modal-close.svg") center no-repeat;
+  padding: 15px 15px;
   border: 0;
   cursor: pointer;
   font-size: 0;
@@ -74,6 +74,7 @@
   padding-left: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+  border-radius: 0;
   color: $white;
   font-size: 16px;
   line-height: 22px;
@@ -106,6 +107,7 @@
   padding-top: 7px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+  border-radius: 0;
   color: $white;
   font-size: 16px;
   line-height: 22px;

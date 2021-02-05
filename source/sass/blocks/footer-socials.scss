@@ -16,6 +16,7 @@
 .footer-socials__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 9px;
   margin: 0;
 }

@@ -24,11 +24,18 @@
     width: 511px;
     height: 288px;
     background-image: url("../img/paper-airplane-desktop@1x.png");
+    background-repeat: no-repeat;
     background-position: center;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/paper-airplane-desktop@2x.png");
+      background-repeat: no-repeat;
       background-size: 511px 288px;
+    }
+
+    @media (max-width: 1360px) {
+      background-size: 341px 192px;
+      left: -460px;
     }
   }
 }
@@ -66,9 +73,11 @@
   width: calc(50% - 15px);
   height: 50px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin-bottom: 35px;
-  padding-left: 18px;
+  padding: 11px 5px 11px 18px;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
   border: none;
   color: $white;
   font-size: 16px;
@@ -92,6 +101,7 @@
     border: solid 2px $black-bg;
   }
 }
+ 
 
 .feedback__form textarea {
   font-family: $font-PTmono;
@@ -101,6 +111,7 @@
   padding-left: 21px;
   padding-top: 15px;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
   border: none;
   color: $white;
   font-size: 16px;
