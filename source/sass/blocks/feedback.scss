@@ -73,7 +73,6 @@
   width: calc(50% - 15px);
   height: 50px;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
   margin-bottom: 35px;
   padding: 11px 5px 11px 18px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -101,7 +100,6 @@
     border: solid 2px $black-bg;
   }
 }
- 
 
 .feedback__form textarea {
   font-family: $font-PTmono;
