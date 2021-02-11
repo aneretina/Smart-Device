@@ -47,6 +47,8 @@
 
 
   if (contactsBtn) {
+    contactsList.classList.add('closed');
+    contactsBtn.classList.add('closed');
     contacts.addEventListener('click', function () {
       contactsBtn.classList.remove('visually-hidden');
       sectionsBtn.classList.remove('visually-hidden');

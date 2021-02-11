@@ -80,12 +80,12 @@
     width: 30px;
     height: 30px;
     border: 0;
-    background: url("../img/icon-plus.svg") center no-repeat transparent;
+    background: url("../img/icon-minus.svg") center no-repeat transparent;
     cursor: pointer;
 
     &.closed {
       margin: 0;
-      background-image: url("../img/icon-minus.svg");
+      background-image: url("../img/icon-plus.svg");
     }
   }
 }
