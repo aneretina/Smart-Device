@@ -8,7 +8,7 @@
   var modal = document.querySelector('.modal');
   var modalOpen = document.querySelector('.header__callback');
   var modalClose = document.querySelector('.modal__close-btn');
-  var body = document.querySelector('body');
+  var page = document.querySelector('html');
 
   var sections = document.querySelector('.footer-sections');
   var sectionsBtn = document.querySelector('.footer-sections__btn');
@@ -33,6 +33,8 @@
 
   if (sectionsBtn) {
     sections.addEventListener('click', function () {
+      sectionsBtn.classList.remove('visually-hidden');
+      contactsBtn.classList.remove('visually-hidden');
       sectionsList.classList.toggle('closed');
       sectionsBtn.classList.toggle('closed');
 
@@ -46,6 +48,8 @@
 
   if (contactsBtn) {
     contacts.addEventListener('click', function () {
+      contactsBtn.classList.remove('visually-hidden');
+      sectionsBtn.classList.remove('visually-hidden');
       contactsList.classList.toggle('closed');
       contactsBtn.classList.toggle('closed');
 
@@ -61,6 +65,7 @@
       modal.classList.remove('modal--open');
       modal.classList.remove('modal__error');
       overlay.classList.remove('overlay--open');
+      page.classList.remove('modal--overflow');
     }
   };
 
@@ -78,7 +83,7 @@
       overlay.classList.add('overlay--open');
       overlay.addEventListener('click', onOverlayHandler);
       document.addEventListener('keydown', onEscHandler);
-      body.classList.add('modal--overflow');
+      page.classList.add('modal--overflow');
       nameField.focus();
     };
   }
@@ -88,7 +93,7 @@
       modal.classList.remove('modal--open');
       modal.classList.remove('modal__error');
       overlay.classList.remove('overlay--open');
-      body.classList.remove('modal--overflow');
+      page.classList.remove('modal--overflow');
     }
 
     overlay.removeEventListener('click', onOverlayHandler);
