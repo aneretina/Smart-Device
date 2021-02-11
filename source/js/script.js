@@ -32,9 +32,8 @@
 
 
   if (sectionsBtn) {
+    sectionsBtn.classList.remove('visually-hidden');
     sections.addEventListener('click', function () {
-      sectionsBtn.classList.remove('visually-hidden');
-      contactsBtn.classList.remove('visually-hidden');
       sectionsList.classList.toggle('closed');
       sectionsBtn.classList.toggle('closed');
 
@@ -49,9 +48,8 @@
   if (contactsBtn) {
     contactsList.classList.add('closed');
     contactsBtn.classList.add('closed');
+    contactsBtn.classList.remove('visually-hidden');
     contacts.addEventListener('click', function () {
-      contactsBtn.classList.remove('visually-hidden');
-      sectionsBtn.classList.remove('visually-hidden');
       contactsList.classList.toggle('closed');
       contactsBtn.classList.toggle('closed');
 
